@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (C) 2015 Evangilo Morais
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~       http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/session_padding_bottom"
+    android:paddingBottom="@dimen/extra_large_margin">
+
+  <android.support.v7.widget.CardView
+      android:id="@+id/cardDates"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="@dimen/extra_large_margin"
+      android:layout_marginRight="@dimen/medium_margin"
+      app:cardCornerRadius="4dp">
+
+    <TextView
+        android:id="@+id/tvDates"
+        style="@style/SessionText.Description"
+        android:layout_marginLeft="@dimen/medium_margin"
+        android:layout_marginRight="@dimen/small_margin"
+        android:textStyle="bold"/>
+  </android.support.v7.widget.CardView>
+
+
+  <TextView
+      android:id="@+id/tvDescription"
+      style="@style/SessionText.Description"
+      android:layout_below="@id/cardDates"
+      android:text="@string/loren_ipsum"/>
+
+  <TextView
+      android:id="@+id/tvTitlePreconditions"
+      style="@style/SessionText.Title"
+      android:text="@string/session_preconditions"
+      android:layout_below="@id/tvDescription"/>
+
+  <TextView
+      android:id="@+id/tvPreconditions"
+      style="@style/SessionText.Description"
+      android:text="@string/loren_ipsum"
+      android:layout_below="@id/tvTitlePreconditions"/>
+
+  <TextView
+      android:id="@+id/tvTitleSpeaker"
+      style="@style/SessionText.Title"
+      android:text="@string/session_speaker"
+      android:layout_below="@+id/tvPreconditions"/>
+
+  <TextView
+      android:id="@+id/tvSpeakerName"
+      style="@style/SessionText.Subtitle"
+      android:layout_below="@id/tvTitleSpeaker"
+      android:text="Evangilo Morais"/>
+
+  <TextView
+      android:id="@+id/tvSpeakerBio"
+      style="@style/SessionText.Description"
+      android:layout_below="@id/tvSpeakerName"
+      android:text="@string/loren_ipsum"/>
+
+  <de.hdodenhof.circleimageview.CircleImageView
+      android:id="@+id/ivSpeakerThumbnail"
+      style="@style/CircleImageView"
+      app:border_width="2dp"
+      app:border_color="@color/avatar_border"
+      android:src="@drawable/user"
+      android:layout_alignTop="@id/tvSpeakerName"/>
+
+</RelativeLayout>

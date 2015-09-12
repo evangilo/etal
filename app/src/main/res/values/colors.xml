@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <color name="colorPrimary">#009688</color>
+  <color name="colorPrimaryDark">#00695C</color>
+  <color name="colorAccent">#FF4081</color>
+  <color name="window_background">#FFF5F5F5</color>
+  <color name="notification_icon_background">#009688</color>
+
+  <color name="session_title">#FF121212</color>
+  <color name="avatar_border">#ffe2e2e2</color>
+</resources>

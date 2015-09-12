@@ -1,0 +1,28 @@
+<resources>
+
+  <!-- Default Margin -->
+  <dimen name="extra_large_margin">72dp</dimen>
+  <dimen name="large_margin">32dp</dimen>
+  <dimen name="medium_margin">16dp</dimen>
+  <dimen name="small_margin">8dp</dimen>
+
+  <!-- Font Size -->
+  <dimen name="text_extra_large_size">18sp</dimen>
+  <dimen name="text_large_size">16sp</dimen>
+  <dimen name="text_medium_size">14sp</dimen>
+  <dimen name="text_small_size">12sp</dimen>
+
+  <dimen name="fab_margin">16dp</dimen>
+
+  <!-- Toolbar Metrics -->
+  <dimen name="toolbar_content_start">72dp</dimen>
+
+  <!-- Session -->
+  <dimen name="session_item_padding_vertical">15dp</dimen>
+  <dimen name="item_session_padding_top">8dp</dimen>
+  <dimen name="session_padding_bottom">24dp</dimen>
+  <dimen name="session_padding_top">12dp</dimen>
+  <dimen name="session_avatar_size">40dp</dimen>
+  <dimen name="session_line_spacing">4dp</dimen>
+
+</resources>

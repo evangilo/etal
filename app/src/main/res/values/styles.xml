@@ -1,0 +1,94 @@
+<!--
+  ~ Copyright (C) 2015 Evangilo Morais
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~       http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<resources>
+
+  <style name="Theme.Etal" parent="Base.Theme.Etal">
+  </style>
+
+  <style name="Base.Theme.Etal" parent="Theme.AppCompat.Light.NoActionBar">
+    <item name="colorPrimary">@color/colorPrimary</item>
+    <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    <item name="colorAccent">@color/colorAccent</item>
+    <item name="android:windowBackground">@color/window_background</item>
+    <item name="windowActionBar">false</item>
+    <item name="windowActionModeOverlay">true</item>
+  </style>
+
+  <style name="SessionText">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:lineSpacingExtra">@dimen/session_line_spacing</item>
+    <item name="android:layout_marginLeft">@dimen/extra_large_margin</item>
+    <item name="android:layout_marginRight">@dimen/medium_margin</item>
+    <item name="android:textSize">@dimen/text_medium_size</item>
+  </style>
+
+  <style name="SessionText.Item">
+    <item name="android:maxLines">2</item>
+    <item name="android:ellipsize">end</item>
+  </style>
+
+  <style name="SessionText.Item.Title">
+    <item name="android:textSize">@dimen/text_medium_size</item>
+    <item name="android:textColor">@color/session_title</item>
+    <item name="android:textStyle">bold</item>
+  </style>
+
+  <style name="SessionText.Item.Description">
+    <item name="android:paddingTop">@dimen/item_session_padding_top</item>
+  </style>
+
+  <style name="ExpandedSessionDetailToolbarTitle">
+    <item name="android:textSize">@dimen/text_extra_large_size</item>
+    <item name="android:textColor">@android:color/white</item>
+    <item name="android:ellipsize">none</item>
+  </style>
+
+  <style name="SessionText.HeaderTitle">
+    <item name="android:textSize">@dimen/text_extra_large_size</item>
+    <item name="android:textColor">@android:color/white</item>
+    <item name="android:layout_marginTop">?attr/actionBarSize</item>
+    <item name="android:layout_marginLeft">0dp</item>
+  </style>
+
+  <style name="SessionText.Description">
+    <item name="android:paddingTop">@dimen/session_padding_top</item>
+    <item name="android:paddingBottom">@dimen/session_padding_bottom</item>
+  </style>
+
+  <style name="SessionText.Title">
+    <item name="android:textSize">@dimen/text_large_size</item>
+    <item name="android:textStyle">bold</item>
+    <item name="android:textColor">#ff212121</item>
+
+  </style>
+
+  <style name="SessionText.Subtitle">
+    <item name="android:textStyle">bold</item>
+  </style>
+
+  <style name="CircleImageView">
+    <item name="android:layout_width">@dimen/session_avatar_size</item>
+    <item name="android:layout_height">@dimen/session_avatar_size</item>
+    <item name="android:layout_marginLeft">@dimen/medium_margin</item>
+  </style>
+
+  <style name="ScheduleItemTitle" parent="SessionText.Item.Title"></style>
+
+  <style name="ScheduleItemDescription" parent="SessionText.Item.Description"></style>
+
+</resources>

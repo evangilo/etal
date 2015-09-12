@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+  <android.support.v4.widget.NestedScrollView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+      <include layout="@layout/toolbar"/>
+
+      <ImageView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center_horizontal"
+          android:layout_marginTop="@dimen/large_margin"
+          android:background="@drawable/logo_etal"/>
+
+      <TextView
+          android:text="@string/full_name_event"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center_horizontal"
+          android:gravity="center_horizontal"
+          android:padding="@dimen/medium_margin"
+          android:textSize="@dimen/text_large_size"
+          android:textStyle="bold"
+          android:layout_marginTop="@dimen/large_margin"/>
+
+      <TextView
+          android:id="@+id/tvEventHypertext"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center_horizontal"
+          android:layout_marginTop="@dimen/medium_margin"
+          android:textColorLink="@color/colorPrimary"
+          android:text="@string/hypertext_event"/>
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center_horizontal"
+          android:textSize="@dimen/text_large_size"
+          android:textStyle="bold"
+          android:layout_marginTop="@dimen/extra_large_margin"
+          android:text="@string/developed_by"/>
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center_horizontal"
+          android:layout_marginTop="@dimen/medium_margin"
+          android:textColor="@color/colorPrimary"
+          android:layout_marginBottom="@dimen/extra_large_margin"
+          android:text="@string/my_email"/>
+
+    </LinearLayout>
+
+  </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>
